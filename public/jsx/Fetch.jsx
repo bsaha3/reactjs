@@ -1,7 +1,8 @@
-var $=require('jquery');
-var React=require('react');
-var Create=require('./Create.jsx');
-var Row=require('./Row.jsx');
+import $ from 'jquery';
+import React from 'react';
+import Create from './Create.jsx';
+import Row from './Row.jsx';
+import ReactDOM from 'react-dom';
 
 var Fetch = React.createClass({
 
@@ -161,5 +162,4 @@ var Fetch = React.createClass({
     }//end of render function
 });
 
-
-module.exports=Fetch;
+export default Fetch;

@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "webpack ./jsx/index.jsx jsx/bundle.jsx",
+    "start": "webpack-dev-server --hot --host 0.0.0.0 ./jsx/index.jsx",
     "load":"http-server"
   },
   "author": "Biswajit Saha",

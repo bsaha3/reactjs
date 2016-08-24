@@ -1,8 +1,7 @@
 module.exports = {
-    entry: "./public/material/App.jsx",
+    entry: "./App.jsx",
     output:
     {
-        path: "./public/material",
         filename: "bundle.js"
     },
     module:

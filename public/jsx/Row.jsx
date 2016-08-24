@@ -1,5 +1,5 @@
-var $=require('jquery');
-var React=require('react');
+import $ from 'jquery';
+import React from 'react';
 
 var Row = React.createClass({
 
@@ -24,10 +24,10 @@ var Row = React.createClass({
                 <td><input value={this.props.data.gender} style={style} onChange={this.handleChange.bind(this, 'gender') } onBlur={this.props.update.bind(this, this.props.data.id, this.state.data, this.props.index) }/></td>
                 <td><input value={this.props.data.email} style={style} onChange={this.handleChange.bind(this, 'email') } onBlur={this.props.update.bind(this, this.props.data.id, this.state.data, this.props.index) }/></td>
                 <td><input value={this.props.data.phone} style={style} onChange={this.handleChange.bind(this, 'phone') } onBlur={this.props.update.bind(this, this.props.data.id, this.state.data, this.props.index) }/></td>
-                <td><button className='btn btn-danger' onClick={this.props.delete.bind(this, this.props.data.id) }>Delete</button></td>
+                <td><button className='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' onClick={this.props.delete.bind(this, this.props.data.id) }>Delete</button></td>
             </tr>
         );
     }
 });
 
-module.exports=Row;
+export default Row;

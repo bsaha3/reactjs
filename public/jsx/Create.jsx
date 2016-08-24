@@ -1,5 +1,6 @@
-var $=require('jquery');
-var React=require('react');
+import $ from 'jquery';
+
+import React from 'react';
 
 var Create = React.createClass({
 
@@ -67,4 +68,4 @@ var Create = React.createClass({
     }
 });
 
-module.exports=Create;
+export default Create;
